@@ -2,17 +2,24 @@
 
 @section('content')
     <section>
-        <div class="container">
-            <div class="row row-cols-5 gap-3">
+        <div class="container py-5 my-5">
+            <div class="row row-cols-5 g-5">
                 @forelse ($movies as $movie)
                     <div class="col-auto">
                         <div class="card">
-                            <img src="" alt="" class="card-img-top">
-                            <div class="card-body">
-                                <h4>
+                            <div class="card-header">
+                                <img src="{{ $movie->path_img }}" alt="" class="card-img-top">
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="crad-title">
                                     {{ $movie->title }}
-                                </h4>
-                                <p>
+                                </h3>
+                                <p class="card-text">
+                                    {{ $movie->overview }}
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <p class="m-0 text-center text-success fw-bolder ">
                                     {{ $movie->vote }}
                                 </p>
                             </div>

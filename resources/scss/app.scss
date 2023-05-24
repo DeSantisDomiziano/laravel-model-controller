@@ -1,1 +1,8 @@
 @import '~bootstrap/scss/bootstrap';
+
+
+img {
+    max-width: 200px;
+    aspect-ratio: 1;
+    object-fit: cover;
+}

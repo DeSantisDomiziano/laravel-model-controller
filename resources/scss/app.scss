@@ -2,7 +2,14 @@
 
 
 img {
-    max-width: 200px;
+    max-width: 340px;
     aspect-ratio: 1;
     object-fit: cover;
+}
+
+.card {
+    max-height: 500px;
+    .card-body {
+        overflow-y: auto;
+    }
 }
